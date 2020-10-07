@@ -1,4 +1,4 @@
-# Curso de FITI
+# Curso de TIFI
 (Fundamentos de Infraestructura de Tecnologías de la Información)
 
 Videos recomendados para iniciar en PACKET TRACER:
