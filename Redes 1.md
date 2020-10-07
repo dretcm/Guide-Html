@@ -14,3 +14,5 @@ Videos recomendados para iniciar en PACKET TRACER:
 ## Direccionamiento IP - Redes de Computadoras
 
 ![iamge](https://github.com/dretcm/Redes-ACM/blob/main/redes_images/ip_address.gif?raw=true)
+
+Nuestra Dirección Mac esta en "Hexadecimal".
