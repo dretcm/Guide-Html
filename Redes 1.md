@@ -15,4 +15,9 @@ Videos recomendados para iniciar en PACKET TRACER:
 
 ![iamge](https://github.com/dretcm/Redes-ACM/blob/main/redes_images/ip_address.gif?raw=true)
 
-Nuestra Dirección Mac esta en "Hexadecimal".
+## Datos clave:
+
+ip: direccion IPV4 (192.168.1.x) # direccion ip.
+mask: mascara de subred (255.255.255.0).
+mac: direccion fisica(es Nuestra Dirección Mac esta en "Hexadecimal").
+gateway: puerta de enlace pedeterminado(192.168.1.1) # direccion privada generica.
