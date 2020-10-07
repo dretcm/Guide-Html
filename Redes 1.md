@@ -10,3 +10,7 @@ Videos recomendados para iniciar en PACKET TRACER:
 
 
 ![imagenn](https://github.com/dretcm/Redes-ACM/blob/main/redes_images/M_osi_TCPIP.png?raw=true)
+
+## Direccionamiento IP - Redes de Computadoras
+
+![iamge](https://github.com/dretcm/Redes-ACM/blob/main/redes_images/ip_address.gif?raw=true)
