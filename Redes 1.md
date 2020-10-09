@@ -1,5 +1,4 @@
-# Curso de FITI
-(Fundamentos de Infraestructura de Tecnologías de la Información)
+# Redes
 
 Videos recomendados para iniciar en PACKET TRACER:
 
