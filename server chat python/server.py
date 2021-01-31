@@ -2,7 +2,7 @@ import socket # used for the network connection
 import threading # necessary for performing various tasks at the same time
 
 # Connection Data
-host = '127.0.0.1'
+host = '127.0.0.1'  # 192.168.1.X according your ip
 port = 55555        # more about ports: https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
 
 # Starting Server
