@@ -5,9 +5,9 @@ import sys
 
 class Client:
     def __init__(self):
-
+        host, port = 127.0.0.0, 55555 
         self.client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.client.connect(('192.168.1.8', 55555))
+        self.client.connect((host, port))
 
 
     def run_client(self, name):
