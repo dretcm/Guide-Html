@@ -148,12 +148,79 @@ my_third_page.html
 		<h2>comments</h2>
 		<p>
 			Hellow this is a comment about me and mainly a <b>test</b> of bolds and href,
-			but also want to share my channel of yt <b><a href="https://www.youtube.com/channel/UCRHgaDh6tXrq2i6sthnixnw">"Dretcm"</a></b> and this is all and <small><i>good bye</i></small>.
+			but also want to <br><br> share my channel of yt <b><a href="https://www.youtube.com/channel/UCRHgaDh6tXrq2i6sthnixnw">"Dretcm"</a></b> and this is all and <small><i>good bye</i></small>.
 		</p>
 	</body>
 </html>
 
-3 ----------------------->>> 
+
+
+# open new page link : href new page : 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>first page</title>
+	</head>
+	<body>
+		<h1>Pages:</h1>
+
+		<a href="https://facebook.com">click to go facebook from this page</a> <br>
+		<a href="https://facebook.com" target="_BLANK">click to go facebook from a new page</a>
+		<!-- with target="_BLANK" open the link in a new page -->
+	</body>
+</html>
+
+
+3 ----------------------->>> use list : "use ul" untidy list or disordered list : "use ol" ordered list :
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>First page</title>
+	</head>
+	<body>
+		<h1>Competition</h1>
+
+		<h2> Participans:</h2>
+		<ul>                         <!-- list with dots "•" -->
+			<li>Mark FM</li>
+			<li>Jhon NJ</li>
+			<li>Sharon OP</li>
+			<li>Timolt AV</li>
+		</ul>
+
+		<h2> Winners:</h2>                
+		<ol>                         <!-- enumerate list with "1. ..., 2. ..., and so on." -->
+			<li>Sharon OP</li>
+			<li>Timolt AV</li>
+			<li>Jhon NJ</li>
+		</ol>
+
+	</body>
+</html>
+
+
+
+############## EXAMPLE 2 :
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>First page</title>
+	</head>
+	<body>
+		<h1>Favorite web sites</h1>
+
+		<ul>                         <!-- list with dots "•" -->
+			<li><a href="https://facebook.com"> Facebook </a> <br> and this is very <b>old</b> page.</li>
+			<li><a href="https://google.com"> Google</a></li>
+			<li><a href="https://youtube.com" target="_BLANK"> Youtube </a></li>
+		</ul>
+
+	</body>
+</html>
+
+
 4 ----------------------->>> 
 5 ----------------------->>> 
 6 ----------------------->>> 
