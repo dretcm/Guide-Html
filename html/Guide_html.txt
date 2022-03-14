@@ -1,1 +1,174 @@
+why index.html ? because this is similar to c++ with main.cpp, always we want log in to page or visit this, our browser will always select this file "index.html".
+
+1 ----------------------->>> basic html : types of tag : comments :
+
+<tag(create a tag) atributes(size, color, type, and so on.)> (development of tag) </tag(close tag)>
+e.g: <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+
+
+<br>  # break of line.
+
+
+# comments int html :
+<!-- This is a comment -->
+<p>This is a paragraph.</p>
+<!-- Remember to add more information here -->
+
+
+# first protopype of file.html :
+<!DOCTYPE html> <!-- indicate that this file use the last version of html -->
+<html>   <!-- all document of html -->
+	<head>   <!-- head: which we cant see in the page (title, meta, code, and so on.) -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>first page</title> <!-- define the title of page e.g: facebook, instagram, itch.io -->
+	</head>
+	<body>   <!-- head: which we can see in the page (tags, buttons, and so on.) -->
+		<h1> Hi World this is my first page XD.</h1>   <!-- simple tag of text-->
+	</body>
+</html>
+
+
+
+# exist 6 types of title for the page in the range of 1-6:
+# IMPORTANT: use "h1" just once in the page, "h2 & h3" two or three times, "h4, h5, & h6" unlimit times in the page.(All this for good practices of html).
+# this "h's" fill a line space and his end for default break line.
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>first page</title>
+	</head>
+	<body> 
+		<h1> Hi World</h1>   <!-- the most hight size of word -->
+		<h2> Hi World</h2>
+		<h3> Hi World</h3>
+		<h4> Hi World</h4>
+		<h5> Hi World</h5>
+		<h6> Hi World</h6>    <!-- the most low size of word -->
+
+	</body>
+</html>
+
+
+
+# types of set text :
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>first page</title>
+	</head>
+	<body>
+		<h1>types of set text</h1>
+		<p>  <!-- "<p>" do post paragrahps & lorem + tap to generate text random. also fill a line and break in the end of text-->
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<!-- below are set text witout breakline in the end of text -->
+		<b>bold</b>
+		<i>italic</i>
+		<strike>tached</strike>
+		<small>small</small>
+
+	</body>
+</html>
+
+2 ----------------------->>> use of <a> : use href : paragrahps with href :
+
+###################### EXAMPLE 1 #########################
+
+# current file:
+index.html
+my_secod_page.html       # local page
+pages             # folder
+
+
+# folder pages :
+my_third_page.html
+
+
+# my_secod_page.html :
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>second page</title>
+	</head>
+	<body>
+		<h1> second page xDDD </h1>
+		<a href="index.html">go back menu</a>
+	</body>
+</html>
+
+
+# pages/my_third_page.html :
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>third page</title>
+	</head>
+	<body>
+		<h1> page 3 0o0 </h1>
+		<a href="../index.html">go back menu</a>  <!-- use "../file" for go back to a previous folder -->
+		<!-- if the file is in "pages/data/page_four.html" use "../../index.html" and so on.-->
+		<br>
+		<a href="index.html">go back menu with error</a> <!-- Error -->
+	</body>
+</html>
+
+
+# index.html :
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>first page</title>
+	</head>
+	<body>
+		<a href="https://facebook.com">Click here to https page</a> <br>     <!-- htpps protocol page -->
+		<a href="my_secod_page.html">2.Click to access to my second page</a> <br>    <!-- local page -->
+		<a href="pages/my_third_page.html">3.Click to access to my third page</a>   <!-- local page with file in other folder -->
+	</body>
+</html>
+
+
+
+
+###################### EXAMPLE 2 #########################
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>first page</title>
+	</head>
+	<body>
+		<h1>Forum of world</h1>
+		<h2>comments</h2>
+		<p>
+			Hellow this is a comment about me and mainly a <b>test</b> of bolds and href,
+			but also want to share my channel of yt <b><a href="https://www.youtube.com/channel/UCRHgaDh6tXrq2i6sthnixnw">"Dretcm"</a></b> and this is all and <small><i>good bye</i></small>.
+		</p>
+	</body>
+</html>
+
+3 ----------------------->>> 
+4 ----------------------->>> 
+5 ----------------------->>> 
+6 ----------------------->>> 
+7 ----------------------->>> 
+8 ----------------------->>> 
+9 ----------------------->>> 
+10 ----------------------->>> 
+11 ----------------------->>> 
+12 ----------------------->>> 
+13 ----------------------->>> 
+14 ----------------------->>> 
+15 ----------------------->>> 
+16 ----------------------->>> 
+17 ----------------------->>> 
+18 ----------------------->>> 
+19 ----------------------->>> 
+20 ----------------------->>> 
 
