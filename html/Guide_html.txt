@@ -314,7 +314,38 @@ my_third_page.html
 </html>
 
 
-6 ----------------------->>> 
+6 ----------------------->>> use form : use input :
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>First page</title>
+	</head>
+	<body>
+
+		<form>
+
+			<!-- <input type="text" name="User"> the name is useful for the backend and the name(User) serves as variable in the backend.-->
+
+			<b>User:</b> <input type="text" required=""> <br>           <!-- required: help to call a alert if the input is empty-->
+			<b>Password:</b> <input type="password" required=""> <br>
+			<b>Age:</b> <input type="number" required="" min="1" max="100"> <br>
+			<b>Mail:</b> <input type="email" required=""> <br>
+			<input type="color"> <br>
+			<input type="range" min="1" max="5"> <br>
+			<input type="date" required=""> <br>
+			<input type="time" required=""> <br>
+			<input type="button" value="Click here XD"> <br>
+			<textarea>ok here you can write and read.</textarea><br>
+			<textarea readonly="">Here you just can read.</textarea> <br>
+			<input type="text" readonly="" value="sitdown and take a break"><br>
+			<input type="submit" value="Send all">
+		</form>
+
+	</body>
+</html>
+
+
 7 ----------------------->>> 
 8 ----------------------->>> 
 9 ----------------------->>> 
