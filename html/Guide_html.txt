@@ -77,6 +77,28 @@ e.g: <button type="button" onclick="alert('Hello world!')">Click Me!</button>
 	</body>
 </html>
 
+
+# use center :
+
+<center><h1>ALEXANDER </h1></center>
+
+
+# use underline in text :
+<u> hellow this is my text with underline </u>
+
+
+# use font :
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>First page</title>
+	</head>
+	<body>
+		<font size=32 color="red" face="arial">TEST OF FONT</font>
+	</body>
+</html>
+
+
 2 ----------------------->>> use of <a> : use href : paragrahps with href :
 
 ###################### EXAMPLE 1 #########################
@@ -127,9 +149,9 @@ my_third_page.html
 		<title>first page</title>
 	</head>
 	<body>
-		<a href="https://facebook.com">Click here to https page</a> <br>     <!-- htpps protocol page -->
-		<a href="my_secod_page.html">2.Click to access to my second page</a> <br>    <!-- local page -->
-		<a href="pages/my_third_page.html">3.Click to access to my third page</a>   <!-- local page with file in other folder -->
+		<a href="https://facebook.com">Click here to https page</a> <br>     <!-- htpps protocol page / extern root-->
+		<a href="my_secod_page.html">2.Click to access to my second page</a> <br>    <!-- local page / local root-->
+		<a href="pages/my_third_page.html">3.Click to access to my third page</a>   <!-- local page with file in other folder / local root -->
 	</body>
 </html>
 
@@ -221,8 +243,77 @@ my_third_page.html
 </html>
 
 
-4 ----------------------->>> 
-5 ----------------------->>> 
+4 ----------------------->>> img : video : sound :
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>First page</title>
+	</head>
+	<body background="https://img5.goodfon.com/wallpaper/nbig/2/f9/devochki-chaepitie-fentezi.jpg" text="white">   <!-- use background with image, if you want use color use "<body style="background-color:green;">" and so on. -->
+
+		<h1 style="background-color: black;">Test of imgs-video-sound</h1>
+
+		<h4 style="background-color: black;color: green;">local img:</h4>    <!-- background box and color text -->
+		<img src="meme_img.jpg" width="300px" height="400px">
+
+		<h4 style="background-color: black;">local video:</h4>
+		<!-- <video src="chika_dance.mp4"></video> this see in the page, but we cant handle this(play, pause, full screen, and so on.) for this we'll use controls. -->
+		<video src="chika_dance.mp4" controls width="500px" height="300px"></video>
+
+		<h4 style="background-color: black;">local sound:</h4>
+		<audio src="music.mp3" controls> </audio>
+
+		<h4 style="background-color: black;">external img:</h4>
+		<img src="https://i.ytimg.com/vi/mlBZeNKCbSI/maxresdefault.jpg" width="500px" height="300px">
+
+		<h4 style="background-color: black;">external video:</h4>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/ulfY8WQE_HE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		<h4 style="background-color: black;">external sound:</h4>
+		<embed src="https://dretcm.github.io/page_dretcm/images/lote%202/crystal.mp3"> <!-- with fond black and no estetic for the page but with controls -->
+		<audio src="https://dretcm.github.io/page_dretcm/images/lote%202/crystal.mp3" Controls> </audio> <!-- best option -->
+
+	</body>
+</html>
+
+5 ----------------------->>> div : divs :
+
+# his use is mainly used in css.
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>First page</title>
+	</head>
+	<body style="background-color:green;">
+		<h1><u>Courses</u></h1>
+		<div>
+			<p>
+				<h4 style="background-color:black; color:white;">Maths:</h4>
+				<p>This course is <b>usefull</b> for understanding the matemathics of form dynamic and funny.</p>
+				<img src="meme_img.jpg">
+			</p>
+		</div>
+
+		<div>
+			<p>
+				<h4>Web:</h4>
+				<p>This course is <b>usefull</b> for understanding the matemathics of form dynamic and funny.</p>
+			</p>
+		</div>
+
+		<div>
+			<p>
+				<h4>Cyber segurity:</h4>
+				<p>This course is <b>usefull</b> for understanding the matemathics of form dynamic and funny.</p>
+			</p>
+		</div>
+
+	</body>
+</html>
+
+
 6 ----------------------->>> 
 7 ----------------------->>> 
 8 ----------------------->>> 
