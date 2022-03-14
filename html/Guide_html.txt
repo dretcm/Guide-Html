@@ -314,7 +314,7 @@ my_third_page.html
 </html>
 
 
-6 ----------------------->>> use form : use input :
+6 ----------------------->>> use form : use input : use text :
 
 <!DOCTYPE html>
 <html>
