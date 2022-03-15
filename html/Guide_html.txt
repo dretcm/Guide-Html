@@ -316,6 +316,32 @@ my_third_page.html
 </html>
 
 
+# style left : right :
+<!DOCTYPE html>
+<html>
+       <head>
+              <title>Dretcm</title>
+       </head>
+
+       <body background = "..\bonus\body.gif", text="white"> 
+
+              <center><img src="per12.gif" width="430" height="220" style="float:left"></center>
+              <center><img src="per9.gif" width="430" height="220" style="float:left"></center>
+              <center><img src="per3.gif" width="430" height="220" style="float:left"></center>
+
+              <center><img src="per4.gif" width="430" height="220" style="float:left"></center>
+
+              <center><embed src="per.mp3" autoplay="" loop="" width="430" height="220" style="float:left"></center>
+
+              <center><img src="per7.gif" width="430" height="220" style="float:left"></center>
+
+              <center><img src="per5.gif" width="430" height="220" style="float:left"></center>
+              <center><img src="per8.gif" width="430" height="220" style="float:left"></center>
+              <center><img src="per2.gif" width="430" height="220" style="float:left"></center>
+
+       </body>
+</html>
+
 5 ----------------------->>> div : divs :
 
 # his use is mainly used in css.
