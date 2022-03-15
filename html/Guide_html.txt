@@ -346,7 +346,37 @@ my_third_page.html
 </html>
 
 
-7 ----------------------->>> 
+7 ----------------------->>> use meta : meta data :
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>First page</title>
+
+		<!-- useful for use all characters type ♀►♫´☻Y•☺☺♥♣♠♦ and so on. -->
+		<meta charset="utf-8">
+
+		<!-- key words when someone search this words in the searcher -->
+		<meta name="keywords" content="games,ps4,anime,vrchat,music">
+
+		<!-- description of the previous meta or descrip of the web page -->
+		<meta name="description" content="This page is the best gamer zone for otakus and music lovers.">
+
+		<!-- creator or author of web page -->
+		<meta name="author" content="Dretcm Aña">
+
+		<meta name="copyright" content="Twitter Inc.">
+
+		<!-- if content=="index" this web page will show in the replys of searcher, "noindex" it'll a web page hide where one form to access this is through of link. -->
+		<meta name="robots" content="noindex">
+	</head>
+	
+	<body>
+		<h1>Hello Perú</h1>
+	</body>
+</html>
+
+
 8 ----------------------->>> 
 9 ----------------------->>> 
 10 ----------------------->>> 
