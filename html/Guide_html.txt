@@ -243,7 +243,7 @@ my_third_page.html
 </html>
 
 
-4 ----------------------->>> img : video : sound :
+4 ----------------------->>> img : video : sound : use alt : use title : use ico link :
 
 <!DOCTYPE html>
 <html>
@@ -276,6 +276,45 @@ my_third_page.html
 
 	</body>
 </html>
+
+
+
+
+# use alt and title :
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pages table</title>
+	</head>
+
+	<body>
+		<!-- alt: if the path image doesnt find, show this text in his place. -->
+		<!-- title: to the passing with the mouse over the image it show the title of image. -->
+
+		<img src="logo.jpg" alt="SJDL img" title="San Juan de Lurigancho">
+		<img src="logo_nofound.jpg" alt="SJDL img" title="San Juan de Lurigancho">     <!-- example of alt -->
+		<video src="chika_dance.mp4" title="chika dance GreenBackground" controls></video>
+		<audio src="music.mp3" alt="music file" title="God music" controls></audio>
+		
+	</body>
+</html>
+
+
+
+# use icon in the name page :
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pages table</title>
+		<link rel="icon" href="iconpage.ico">     <!-- remenber that the format of img is .ico -->
+	</head>
+
+	<body>
+	</body>
+</html>
+
 
 5 ----------------------->>> div : divs :
 
@@ -377,9 +416,226 @@ my_third_page.html
 </html>
 
 
-8 ----------------------->>> 
-9 ----------------------->>> 
-10 ----------------------->>> 
+8 ----------------------->>> nav : header : foter : section : article : aside :
+
+# SEMANTIC HTML : STRUCTURE :
+http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/introducing-html5-footer-header-nav-article-section-and-aside-elements/
+
+
+############### index.html ################
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forumsheeesh</title>
+	</head>
+
+	<body>
+
+		<header>       <!-- the block of above that always appear in the web pages -->
+			<nav>          <!-- the options to navegate for the web page -->
+				<ul>
+					<li><a href="index.html">Menu</a></li>
+					<li><a href="account.html">Account</a></li>
+					<li><a href="about.html">About us</a></li>
+				</ul>
+			</nav>	
+		</header>
+
+		<article>     <!-- type as the text -->
+			<section>      <!-- type as the paragraph of text -->
+				<h1>Hello Guys</h1>
+				<h2>Tell Lorem</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</section>
+		</article>
+
+		<aside>     <!-- lateral bar for more content -->
+			<h3>Bonus:</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.
+			</p>
+		</aside>
+
+		<footer>     <!-- foot page -->
+			<h4>Copyright - Practices Ins.</h4>
+			<p>Send you comments for more content in this forum.</p>
+			<a href="https://github.com/dretcm" target="_BLANK">Github</a>
+		</footer>
+		
+	</body>
+</html>
+
+############### account.html ################
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Account info</title>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Menu</a></li>
+					<li><a href="account.html">Account</a></li>
+					<li><a href="about.html">About us</a></li>
+				</ul>
+			</nav>	
+		</header>
+
+		<h1>Account</h1>
+		<p>
+			<b>Name:</b> Gabriel Montesco <br>
+			<b>Mail:</b> montesco@gmail.com <br>
+			<b>Chargue:</b> matemathic
+		</p>
+
+	</body>
+</html>
+
+############### about.html ################
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About info</title>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Menu</a></li>
+					<li><a href="account.html">Account</a></li>
+					<li><a href="about.html">About us</a></li>
+				</ul>
+			</nav>	
+		</header>
+
+		<h1>About us</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+	</body>
+</html>
+
+
+9 ----------------------->>> use tables : use table :
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pages table</title>
+	</head>
+
+	<body>
+
+		<table border="1px">     		<!-- if you dont define border, the table will are without mark or layout-->
+				<tr>       		<!-- new row -->
+					<td><b>Names</b></td>   		<!-- new column-->
+					<td><b>Age</b></td>
+					<td><b>Chargue</b></td>
+					<td><b>Country</b></td>
+				</tr>
+				<tr>
+					<td>James M.U.</td>
+					<td>32</td>
+					<td>Data Science</td>
+					<td>Unite Kindong</td>
+				</tr>
+				<tr>
+					<td>Harry S.F.</td>
+					<td>27</td>
+					<td>Full Stack</td>
+					<td>E.U</td>
+				</tr>
+		</table>
+		
+	</body>
+</html>
+
+ 
+10 ----------------------->>> use id with href : hyperlink :
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pages Test</title>
+	</head>
+
+	<body>
+		<h4><a href="#cap_2">Click next cap</a></h4>    <!-- the key is:"# + tag_id" -->
+
+		<h4> Chapter 1</h4>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+			<video src="chika_dance.mp4" controls></video>
+		</p>
+
+		<h4 id="cap_2">Chapter 2</h4>       <!-- the id in this tag is "cap_2" -->
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+	</body>
+</html>
+
+
 11 ----------------------->>> 
 12 ----------------------->>> 
 13 ----------------------->>> 
