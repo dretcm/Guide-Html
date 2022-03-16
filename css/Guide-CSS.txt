@@ -1,0 +1,339 @@
+1 ---------------------------->>> forms to use css in html :
+
+# 1 form :
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning CSS</title>
+		<link rel="stylesheet" type="text/css" href="my_styles.css">
+	</head>
+
+	<body>
+		<h1>Work with CSS</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+	<style type="text/css">
+		<!-- here you begin to type the css code -->
+	</style>
+	</body>
+</html>
+
+
+
+# 2 form :
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+	<style type="text/css">
+		@import file and so on.
+	</style>
+	</body>
+</html>
+
+
+
+# form 3 : and the best :
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning CSS</title>
+		<link rel="stylesheet" type="text/css" href="my_styles.css">
+	</head>
+
+	<body>
+		<h1>Work with CSS</h1>
+
+
+2 ---------------------------->>> types of selector : hover :
+
+# colors in hexageximal: https://www.mathsisfun.com/hexadecimal-decimal-colors.html
+
+		  Decimal             Hexadecimal
+Color        (Red, Green, Blue)        (#RRGGBB)
+------------------------------------------------
+Black		(0, 0, 0)		#000000
+White		(255.255.255)		#FFFFFF
+Red		(255, 0, 0)		#FF0000
+Green		(0.255, 0)		#00FF00
+Blue		(0, 0.255)		#0000FF
+Yellow		(255.255, 0)		#FFFF00
+Cyan		(0.255.255)		#00FFFF
+Magenta		(255, 0.255)		#FF00FF
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning CSS</title>
+		<link rel="stylesheet" type="text/css" href="my_styles.css">
+	</head>
+
+	<body>
+		<h1>Work with CSS</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<input type="button" value="Hello is my button">
+	</body>
+</html>
+
+
+# universal selector : select all elements in html.
+# in this case all html's text will be red.
+* {
+	color: red;    // bad use red. you should use colors in hexagesimal red: f00, green: 0f0, black: 000
+}
+
+
+
+# element selector : select all elements or tags and apply this changues.
+# in this case selec all h1 for change his color in red.
+h1 {
+	color: #f00;
+}
+# input : change hi text to green :
+input {
+	color: #0f0;
+}
+
+
+
+# class selector : select all elements with a type of class o for his name of clase.
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning CSS</title>
+		<link rel="stylesheet" type="text/css" href="my_styles.css">
+	</head>
+
+	<body>
+		<h1>Work with CSS</h1>
+		<p class="test_class_example">       <!-- class name or the reference to use in css -->
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<input type="button" value="Hello is my button" class="test_class_example">
+	</body>
+</html>
+
+# change the color to orange to the element or tag with the class name "test_class_example", always in this cases use dot in the begin.
+.test_class_example {
+	color: #ff8f00;
+}
+
+
+
+# id selector : recomendent to just use in an unique tag, as his name say is a "id", an unique element or identifier.
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning CSS</title>
+		<link rel="stylesheet" type="text/css" href="my_styles.css">
+	</head>
+
+	<body>
+		<h1>Work with CSS</h1>
+		<p id="test_id">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<input type="button" value="Hello is my button" class="test_class_example">
+	</body>
+</html>
+
+# when use id in css we use "#" + "id of specific tag".
+#test_id{
+	color: #1900d1;
+}
+
+
+
+# atribute selector :
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning CSS</title>
+		<link rel="stylesheet" type="text/css" href="my_styles.css">
+	</head>
+
+	<body>
+		<h1>Work with CSS</h1>
+		<p my_attribute_test="gaa">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<input type="button" value="Hello is my button" my_attribute_test="gaa">
+	</body>
+</html>
+# we create our own attribute :
+[my_attribute_test="gaa"]{
+	color: #999999;
+}
+
+
+
+# predecessor selector : select a tag where it's meets the conditions of selector in css.
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning CSS</title>
+		<link rel="stylesheet" type="text/css" href="my_styles.css">
+	</head>
+
+	<body>
+		<h2 class="test_h2"><b>Work with CSS</b></h2>
+		<h2><p>Work with CSS</p></h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<input type="button" value="Hello is my button" my_atribute_test="gaa">
+	</body>
+</html>
+
+# in this case just colored the second h2 because has inside the tag <p>.
+h2 p {
+	color: #fff000;     // yellow color
+}
+# also predecessor work with classes and so on.
+.test_h2 b {
+	color: #00ffff;     // skyblue color
+}
+
+
+
+# psudo class selector : if we hover the mouse over the tag its change acording you css code selector.
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning CSS</title>
+		<link rel="stylesheet" type="text/css" href="my_styles.css">
+	</head>
+
+	<body>
+		<h2 my_atribute_test="gaa"><b>Work with CSS</b></h2>
+		<h2><p>Work with CSS</p></h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<input type="button" value="Hello is my button">
+	</body>
+</html>
+
+# its pseudo class work also with the others selectors : remark(:hover must together to last tag)
+h2 p:hover {
+	color: #f00;
+}
+
+[my_atribute_test="gaa"] b:hover {
+	color: #0f0;
+}
+
+
+
+# pseudo element selector :
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			p::first-line {
+ 				color: #ff0000;
+		  		font-variant: small-caps;
+			}
+		</style>
+	</head>
+	<body>
+		<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. 
+		Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, 
+		and more, and more, and more, and more.</p>
+
+	</body>
+</html>
+# in this case only paint of red the first line of tag <p>: You can use the ::first-line pseudo-element to add a special effect to the first line of a text.
+
+
+
+########################## hierarchy and waterfall ##########################
+# according the hierarchy the most important in scale of 1 to 5 where 1 is the most important, the most important will be the definitive selector change tag or element.
+# if the selector is in the same hierarchy of other selector in the css code, then the definitve change will be the last selector in the css code.
+
+1) most important:  use "!important" in selector:
+h1 {
+	color: red !important;
+}
+
+2) use style in html:
+	<h1 style="color:red;">Hellow</h1>
+
+3) use identifier :
+	<h1 id="my_id_style">Hellow</h1>
+#my_id_style {
+	color: red;
+}
+
+
+4) class , pseudoclasses, predecessors, & attributes :
+	<h1 class="my_class" my_att = "my_test_att">Hellow</h1>
+.my_class {
+	color: red;
+}
+
+h1:hover{
+	color:green;
+}
+[my_att = "my_test_att"]{
+	color:blue;
+}
+h1 u{
+	color:blue;
+}
+
+
+5) less important : elements & pseudo elements :
+	<h1><u>Hellow</u></h1>
+h1{
+	color:green;
+}
+
+p::first-line {
+ 	color: #f00;
+}
+
+
+3 ---------------------------->>>
+4 ---------------------------->>>
+5 ---------------------------->>>
+6 ---------------------------->>>
+8 ---------------------------->>>
+9 ---------------------------->>>
+10 ---------------------------->>>
+11 ---------------------------->>>
+12 ---------------------------->>>
+13 ---------------------------->>>
+14 ---------------------------->>>
+15 ---------------------------->>>
+16 ---------------------------->>>
+17 ---------------------------->>>
+18 ---------------------------->>>
+19 ---------------------------->>>
+20 ---------------------------->>>
+21 ---------------------------->>>
+22 ---------------------------->>>
+23 ---------------------------->>>
+24 ---------------------------->>>
