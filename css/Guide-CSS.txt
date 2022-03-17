@@ -316,6 +316,14 @@ p::first-line {
 }
 
 
+
+# select several elements :
+
+.test-class, .example-clas{
+	color: #1f0ad9;
+}
+
+
 3 ---------------------------->>>  Ben Methodology :
 
 # when we use div's establish a name class and all tags inside of this have a class with the div class name + "__" two underscores + the tag name and so on with others div's.
@@ -781,8 +789,103 @@ h2{
 	border-color: #0f0;
 }
 
-11 ---------------------------->>>
-12 ---------------------------->>>
+11 ---------------------------->>> shadows in : boxes, text  : use transform rotate :
+
+
+# normal form :
+h2{
+	background-color: #f00;
+	display: inline-block;
+	padding: 100px;
+	box-sizing: content-box;
+	text-align: center;
+	margin: 10px 50px 10px;
+	border-radius: 10px;
+
+	box-shadow: 20px 30px 10px 0px #000;   /* axis x, axis y, size of shadow, border shadow, color */
+	text-shadow: 10px 10px 5px #0f0;   /* axis x, axis y, size of shadow, color */
+
+	transform: rotate(45deg);    /* rotate to the right. the same rotation "transform: rotate(405deg);" 360° + 45° */
+}
+
+
+
+
+# intense form :
+h2{
+	background-color: #f00;
+	display: inline-block;
+	padding: 100px;
+	box-sizing: content-box;
+	text-align: center;
+	margin: 10px 50px 10px;
+	border-radius: 10px;
+	box-shadow: 20px 30px 10px 0px #000, 20px 30px 10px 0px #000, 20px 30px 10px 0px #000;
+	text-shadow: 10px 10px 5px #0f0, 10px 10px 5px #0f0, 10px 10px 5px #0f0, 10px 10px 5px #0f0;
+
+	transform: rotate(-45deg);    /* rotate to the left*/
+}
+
+
+
+
+# use transform rotate : radians :
+Angle in Degrees	Angle in Radians
+30°			π/6 = 0.524 Rad
+45°			π/4 = 0.785 Rad
+60°			π/3 = 1.047 Rad
+90°			π/2 = 1.571 Rad
+
+transform: rotate(0.785rad);      /* 45°  */
+transform: rotate(3.1416rad);     /* 180° */
+transform: rotate(2*3.1416rad);   /* equals to 360° */
+
+
+12 ---------------------------->>>  outline and his difference with border :
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning CSS</title>
+		<link rel="stylesheet" type="text/css" href="my_styles.css">
+		<link rel="stylesheet" type="text/css" href="normalize.css">	
+	</head>
+
+	<body>
+
+		<h2>Box 1</h2><h2 class="box1-class">Box 2</h2>
+
+	</body>
+</html>
+
+
+
+* {
+	font-family: cursive;
+	font-size: 25px;
+}
+
+
+h2{
+	background-color: #ff0;
+	display: inline-block;
+	padding: 100px;
+	box-sizing: content-box;
+	text-align: center;
+}
+
+/*
+.box1-class{
+	border: 10px solid #00f;      /* this method put a border in the box, but this border affect to the others elements in the page changuin the space or position */
+}
+*/
+
+.box1-class{
+	outline: 10px solid #00f;    /* this doesnt affect the others elements and if his position in the front or deep its show his border according these */
+}
+
+
+
 13 ---------------------------->>>
 14 ---------------------------->>>
 15 ---------------------------->>>
