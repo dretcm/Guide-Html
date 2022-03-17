@@ -217,7 +217,7 @@ h2 p {
 
 
 
-# psudo class selector : if we hover the mouse over the tag its change acording you css code selector.
+# pseudo class selector : if we hover the mouse over the tag its change acording you css code selector.
 <!DOCTYPE html>
 <html>
 	<head>
@@ -316,13 +316,471 @@ p::first-line {
 }
 
 
-3 ---------------------------->>>
-4 ---------------------------->>>
-5 ---------------------------->>>
-6 ---------------------------->>>
-8 ---------------------------->>>
-9 ---------------------------->>>
-10 ---------------------------->>>
+3 ---------------------------->>>  Ben Methodology :
+
+# when we use div's establish a name class and all tags inside of this have a class with the div class name + "__" two underscores + the tag name and so on with others div's.
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning CSS</title>
+		<link rel="stylesheet" type="text/css" href="my_styles.css">
+	</head>
+
+	<body>
+		<div class="test-form">
+			<p class="test-form__p">
+				<h4 class="test-form__p-h4">Sumary:</h4>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+			<input type="text" class="test-form__input">
+		</div>
+
+		<div class="example-form">
+			<p class="example-form__p">
+				<h4 class="example-form__p-h4">Sumary 2:</h4>
+				<input type="button" value="hiiii" class="example-form__p-input">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+			<input type="text" value="Hulkaaa" class="example-form__input">
+		</div>
+
+	</body>
+</html>
+
+
+# css:
+.test-form__p-h4{
+	color: #0f0;
+}
+
+.example-form__input{
+	color: #f00;
+}
+
+
+4 ---------------------------->>>  measure unit : em : vw : vh : padding : margin : font's : google fonts :
+
+# use em :
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning CSS</title>
+		<link rel="stylesheet" type="text/css" href="my_styles.css">
+	</head>
+
+	<body>
+		<div class="test-form">
+			<h2 class="test-form__h2">Hello css</h2>
+		</div>
+
+	</body>
+</html>
+
+# the value of "em" is "25px", if will be "5em" equals "5*25px", uf we changue the ".test-form: fint-size: 50px, then "em" will cost "50px".
+# by default font-size in the div is 16px.
+.test-form{                  
+	font-size: 25px;
+}
+
+.test-form__h2{
+	font-size: 1em;
+}
+
+
+# set the margin and padding : all together to the screen and so on.
+* {
+	padding: 0px;    // also work with 0mm, 0cm, and so on. But simplely we can use 0 already 0*somevale is 0.
+	margin: 0px;
+}
+
+
+# this serves for the adjustment of web page in tables, cellphones, cpu's, and so on.
+# viewwidth with 50vw is for the half of window in the width, screen, and so on. The same with viewporthieght 50vh half but in the height.
+.test-form{
+	font-size: 25px;
+	background-color: #0f0;
+	width: 50vw;
+	height: 50vh;
+}
+
+
+
+# more attributes :
+.test-form{
+	font-size: 25px;
+}
+
+.test-form__h2{
+	font-size: 2em;
+	font-family: Arial;     // type of word
+	line-height: 1.5;       // the height of word where 50% up and the other 50% low and the word always will be in the center.
+	font-weight: normal;    // width of word or type bold, also work with numbers 100, 400, 600, and so on.
+}
+
+
+
+# how change font-family with fonts of google :
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning CSS</title>
+		<link rel="stylesheet" type="text/css" href="my_styles.css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">        <!-- copy of google fonts in select style -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">		
+	</head>
+
+	<body>
+		<div class="test-form">
+			<h2 class="test-form__h2">Hello css</h2>
+		</div>
+
+	</body>
+</html>
+
+
+.test-form{
+	font-size: 25px;
+}
+
+.test-form__h2{
+	font-size: 2em;
+	font-family: 'Pacifico', cursive;     // if 'Pacifico' doesnt in the store, then the css will use cursive.
+	line-height: 1.5;
+	font-weight: normal;
+}
+
+
+# to squals in html also we can use left and right float :
+.test-form__h2{
+	font-size: 2em;
+	line-height: 1.5;
+	font-weight: normal;
+	color: #ff7f00;
+	float:left;   // here example
+}
+
+5 ---------------------------->>> use normalize css : 
+
+https://necolas.github.io/normalize.css/8.0.1/normalize.css
+# use the link or save this file in your proyect.
+# this serves for work with pure css and not with parameters of the navigator or others.
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning CSS</title>
+		<link rel="stylesheet" type="text/css" href="my_styles.css">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<!--<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> this is copying the link -->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">		
+	</head>
+
+	<body>
+		<div class="test-form">
+			<h2 class="test-form__h2">Hello css</h2>
+		</div>
+
+	</body>
+</html>
+
+
+# in the normalize we have to set the img and the box sizng :
+
+* {
+  box-sizing: border-box;     // for the boxes always are in the size that we adjusted.
+  padding: 0;
+  margin: 0;
+ }
+
+img {
+  border-style: none;
+  max-width: 100%;    // add this attribute for the img in other plataforms work allright.
+}
+
+
+6 ---------------------------->>>  h's in line or together :
+
+# one form :
+h1 {
+  display: inline-block;
+}
+
+
+# form 2 :
+h1 {
+  float:left;    // also can use right.
+}
+
+7 ---------------------------->>> use content :
+
+# example 1 :
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a::after {
+  content: " (" attr(href) ")";
+}
+</style>
+</head>
+<body>
+<h1>The content Property</h1>
+<p>The content property is used to insert generated content.</p>
+
+<p>Look at our:</p>
+<p>
+<a href="https://www.w3schools.com/css/">CSS Tutorial</a><br>
+<a href="https://www.w3schools.com/cssref/">CSS Reference</a>
+</p>
+
+</body>
+</html>
+
+#output:
+CSS Tutorial(https://www.w3schools.com/css/)
+CSS Reference(https://www.w3schools.com/cssref/)
+
+
+
+# example 2:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style: none; /* Remove HTML bullets */
+  padding: 0;
+  margin: 0;
+}
+
+li { 
+  padding-left: 16px; 
+}
+
+li::before {
+  content: "•"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: blue; /* Or a color you prefer */
+}
+</style>
+</head>
+<body>
+
+<h1>The content Property</h1>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+</body>
+</html>
+
+
+
+# example 3:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::before { 
+  content: "Read this -";    /* put this in the begin of all tag "p". */
+}
+
+p#hometown::before {       /* the "p" with id "#hometown" will be "normal".
+  content: normal;
+}
+</style>
+</head>
+<body>
+
+<p>My name is Donald</p>
+<p id="hometown">I live in Ducksburg</p>
+
+</body>
+</html>
+
+# output :
+Read this - My name is Donald
+I live in Ducksburg
+
+
+
+# more about content : https://www.w3schools.com/cssref/pr_gen_content.asp
+
+
+8 ---------------------------->>> padding : width and height : text alin :
+# the padding is the distance betwen the text and his box for top, left, right, and botton.
+# margin != padding : https://blog.hubspot.com/website/css-margin-vs-padding
+
+# form 1 to set the padding :
+* {
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+}
+
+
+h2{
+	background-color: #f00;
+	display: inline-block;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+	padding-left: 40px;
+}
+
+
+
+# form 2:
+h2{
+	background-color: #f00;
+	display: inline-block;
+	padding: 10px;      // all sides with 10px of padding.
+}
+
+
+
+# form 3:
+h2{
+	background-color: #f00;
+	display: inline-block;
+	padding: 10px 50px;      // vertical padding,  horizontal padding.
+}
+
+
+
+# form 4:
+h2{
+	background-color: #f00;
+	display: inline-block;
+	padding: 10px 50px 20px 10px;      // top, right, botton, left
+}
+
+
+# form 5:
+h2{
+	background-color: #f00;
+	display: inline-block;
+	padding: 10px 50px 100px;      // top, right, botton, as no define value its take the same value of padding in horizontal in this case the padding of right(50px)
+}
+
+
+
+
+# use padding + width + height :
+h2{
+	background-color: #f00;
+	display: inline-block;
+	padding: 10px 50px;
+	width: 100px;
+	height: 100px;
+	box-sizing: content-box;       //the text w and h + the padding, vertical = 100px + 2*10px, horizontal = 100px + 2*50px, if we just want the w and h use "border-box".
+	text-align: center;           // centering the text
+}
+
+
+9 ---------------------------->>> Margin : margin :
+# the margin is the distance betwen other elements(boxes, screen, text, and so on.)
+
+# form 1:
+h2{
+	background-color: #f00;
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	margin-left: 40px;
+}
+
+
+# form 2:
+h2{
+	margin: 10px;    // all sides
+}
+
+
+# form 3:
+h2{
+	margin: 10px 50px;    // vertical, horizontal
+}
+
+# form 4:
+h2{
+	margin: 10px 50px 10px 5px;    // top, right, botton, left
+}
+
+
+# form 5:
+h2{
+	margin: 10px 50px 10px;    // top, right, botton, left empty so we use right value
+}
+
+
+10 ---------------------------->>> border : border radius : circle box :
+
+# a little border instead of the triangular shape :
+h2{
+	background-color: #f00;
+	display: inline-block;
+	padding: 100px;
+	box-sizing: content-box;
+	text-align: center;
+	border-radius: 10px;    // here
+}
+
+
+# circle box use : "border-radius: 50%;"
+
+
+# defining the border color, size, type :
+h2{
+	background-color: #f00;
+	display: inline-block;
+	padding: 100px;
+	box-sizing: content-box;
+	text-align: center;
+	margin: 10px 50px 10px;
+
+	border: 10px solid #0f0;     // size border, type boder, color.
+}
+
+# types of border : https://www.w3schools.com/css/css_border.asp :
+dotted - Defines a dotted border
+dashed - Defines a dashed border
+solid - Defines a solid border
+double - Defines a double border
+groove - Defines a 3D grooved border. The effect depends on the border-color value
+ridge - Defines a 3D ridged border. The effect depends on the border-color value
+inset - Defines a 3D inset border. The effect depends on the border-color value
+outset - Defines a 3D outset border. The effect depends on the border-color value
+none - Defines no border
+hidden - Defines a hidden border
+
+
+# combination of borders :
+h2{
+	background-color: #f00;
+	display: inline-block;
+	padding: 100px;
+	box-sizing: content-box;
+	text-align: center;
+	margin: 10px 50px 10px;
+
+	border-style: dotted dashed solid double;
+	border-color: #0f0;
+}
+
 11 ---------------------------->>>
 12 ---------------------------->>>
 13 ---------------------------->>>
