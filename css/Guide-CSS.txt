@@ -870,7 +870,7 @@ h2{
 	background-color: #ff0;
 	display: inline-block;
 	padding: 100px;
-	box-sizing: content-box;
+	box-sizing: content-box;    /* content-box + border: affect others elements, border-box + border: reduce the original box.
 	text-align: center;
 }
 
@@ -883,7 +883,6 @@ h2{
 .box1-class{
 	outline: 10px solid #00f;    /* this doesnt affect the others elements and if his position in the front or deep its show his border according these */
 }
-
 
 
 13 ---------------------------->>>
