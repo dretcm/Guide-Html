@@ -885,7 +885,87 @@ h2{
 }
 
 
-13 ---------------------------->>>
+13 ---------------------------->>> positions : z-index :
+
+# TYPES OF POSITION :
+1) static: this position is by default.
+
+
+2) relative : according the html element position origin it can move to top, right, botton, and left.
+# where top and left are most important that right and botton. the moving is the remoteness of side chosed, example:
+# if we select top: 100px, the box will go 100px to botton, that is to say, walks away from top.
+
+.box2{
+	background-color: #00df88;
+	position: relative;
+	botton: 200px;         /* the final set is of top and left for major importance. */
+	top: 100px;
+	left: 10px;
+	right: 150px;
+}
+
+# use z-index : USE Z-INDEX :
+# 1.the value of z-index while more major be this, it will be more up or above others elements.
+# 2.recomend use values with the interval of 50 for that if we want add other element we doesnt modificate all elemtns in one in one.
+
+.box2{
+	background-color: #00df88;
+	position: relative;
+	top:  50px;
+	right: -30px;
+	z-index: 0;
+}
+
+.box3{
+	background-color: #00ffff;
+	position: relative;
+	z-index: 50;
+}
+
+
+
+# the problem of div's with z-index : content of content :
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning CSS</title>
+		<link rel="stylesheet" type="text/css" href="my_styles.css">
+		<link rel="stylesheet" type="text/css" href="normalize.css">	
+	</head>
+
+	<body>
+
+		<div class="father">    		<!-- double div or nest of div -->
+			<div class="son">
+			</div>
+		</div>
+
+
+	</body>
+</html>
+
+
+.father{
+	width: 200px;
+	height: 200px;
+	background-color: #00df88;
+	margin: 40px;
+	position: relative;          /* if we want that the father will be over the son in father "just" type relative, doesnt exist other form */
+}
+
+.son{
+	width: 100px;
+	height: 100px;
+	background-color: #dd9500;
+	position: relative;
+	bottom: 30px;
+	right: 30px;
+	z-index: -1;      /* and the son put negative numbers */
+}
+
+
+
 14 ---------------------------->>>
 15 ---------------------------->>>
 16 ---------------------------->>>
