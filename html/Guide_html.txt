@@ -426,6 +426,11 @@ my_third_page.html
 				</button>
 
 
+# place holder :
+    <form>
+      <input type="text" name="nombre" placeholder="Enter Your Name">
+    </form>
+
 7 ----------------------->>> use meta : meta data :
 
 <!DOCTYPE html>
@@ -677,7 +682,153 @@ http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-
 </html>
 
 
-11 ----------------------->>> 
+11 ----------------------->>> scripts html :
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script type="text/javascript">
+      function hello(){
+        document.getElementById('2').innerHTML = 'GoodBye!';
+        document.querySelector('h1').innerHTML = 'Eeeeeooo!';
+      }
+    </script>
+
+  </head>
+
+  <body>
+    <h1 class="first" id="1"> Main page</h1>
+    <h1 clas ="second" id="2"> aaah!! XD</h1>
+    <h1 id="3"> ok sir</h1>
+    <button onclick="hello()">click here</button>
+
+  </body>
+</html>
+
+
+
+# counters :
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script type="text/javascript">
+
+      let con = 0;
+
+      function hello(){
+        con++;
+        document.getElementById('counter').innerHTML = con;
+      }
+    </script>
+
+  </head>
+
+  <body>
+    <h1 class="first" id="counter"> Main page</h1>
+    <h1 clas ="second" id="2"> aaah!! XD</h1>
+    <h1 id="3"> ok sir</h1>
+    
+    <button onclick="hello()">click here</button>
+
+  </body>
+</html>
+
+
+
+# advance :
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script type="text/javascript">
+	// local storage go to the impector and go applicatins and local storage.
+
+      if(!localStorage.getItem('counter'))
+        localStorage.setItem('counter', 0);
+
+      document.addEventListener('DOMContentLoaded', ()=> {
+        document.querySelector('#counter').innerHTML = localStorage.getItem('counter');
+
+        document.querySelector('button').onclick = () => {
+            let counter = localStorage.getItem('counter');
+            counter++;
+
+            document.querySelector('#counter').innerHTML = counter;
+
+            localStorage.setItem('counter', counter);
+        }
+      })
+
+    </script>
+
+  </head>
+
+  <body>
+    <h1 id="counter"> Main page</h1>
+    <button>click here</button>
+
+  </body>
+</html>
+
+
+
+# adder list :
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script type="text/javascript">
+
+      document.addEventListener('DOMContentLoaded', ()=> {
+
+        document.querySelector('#b_submit').disabled = true;
+
+        document.querySelector('#task').onkeyup = () => {
+          if(document.querySelector('#task').value.length > 0){
+            document.querySelector('#b_submit').disabled = false;
+          }
+          else{
+            document.querySelector('#b_submit').disabled = true;
+          }
+        }
+
+        document.querySelector('#new-task').onsubmit = () => {
+
+           document.querySelector('#b_submit').disabled = true;
+
+          if (document.querySelector('#task').value == '') return false;
+
+          const li = document.createElement('li');
+          li.innerHTML = document.querySelector('#task').value;
+
+          document.querySelector('#tasks').append(li);
+
+          document.querySelector('#task').value = '';
+
+          return false;
+        }
+      })
+
+    </script>
+
+  </head>
+
+<body>
+        <h1>Tasks</h1>
+        <ul id="tasks">
+        </ul>
+        <form id="new-task" target="_BLANK">
+            <input id="task" autocomplete="off" type="text">
+            <input id="b_submit" type="submit">
+        </form>
+
+</body>
+
+</html>
+
 12 ----------------------->>> 
 13 ----------------------->>> 
 14 ----------------------->>> 
