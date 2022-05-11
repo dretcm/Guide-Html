@@ -1,10 +1,16 @@
+0 --------------->>> window define variable :
+
+pc_window_size = (window.screen.height, window.screen.width)
+
+browser_size = (window.innerHeight, window.innerWidth)
+
 1 ---------------------------->>>
 2 ---------------------------->>>
 3 ---------------------------->>>
 4 ---------------------------->>>
 5 ---------------------------->>>
-
 6 ---------------------------->>>
+7 ---------------------------->>>
 8 ---------------------------->>>
 9 ---------------------------->>>
 10 ---------------------------->>>
@@ -22,3 +28,124 @@
 22 ---------------------------->>>
 23 ---------------------------->>>
 24 ---------------------------->>>
+
+---------------------->>> Click random button :
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style type="text/css">
+      #btn{
+        position: absolute; box-sizing: content-box; padding: 0;
+        /*width: 20vw; height: 20vh;*/
+        font-size: 5vw; font-family: Arial; font-weight : bold;
+        font-size-adjust: 100%;
+      }
+    </style>
+
+    <script type="text/javascript">
+      let index = 0;
+      const arr = ["Te quiero :3", "Me encantas :3", "Te amo <3"]
+      
+      document.addEventListener('DOMContentLoaded', ()=> {
+
+        btn = document.querySelector('#btn');
+
+        btn.onclick = () => {
+          btn.value = arr[index];
+
+          if (index < arr.length - 1) index++;
+          else index = 0;
+
+          let i=0,j=0, h = window.innerHeight-15, w=window.innerWidth-21;
+          do{
+            i = btn.style.top = Math.floor(Math.random()*h - (btn.offsetHeight));
+          }while(i>h || i <0);
+
+          do{
+            j = btn.style.left = Math.floor(Math.random()*w - (btn.offsetWidth));
+          }while(j>w || j<0);
+
+          btn.style.top = i +'px';
+          btn.style.left = j +'px';
+
+          //console.log(i, j, btn.offsetHeight)
+        }
+      })
+    </script>
+
+  </head>
+
+<body>
+    <input type="submit" id="btn" value="holi :3">
+</body>
+
+</html>
+
+---------------------->>> validation name : list add : create item li :
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script type="text/javascript">
+
+      document.addEventListener('DOMContentLoaded', ()=> {
+
+        document.querySelector('#b_submit').disabled = true;
+
+        document.querySelector('#task').onkeyup = () => {
+          if(document.querySelector('#task').value.length > 0){
+            document.querySelector('#b_submit').disabled = false;
+          }
+          else{
+            document.querySelector('#b_submit').disabled = true;
+          }
+        }
+
+        document.querySelector('#new-task').onsubmit = () => {
+
+           document.querySelector('#b_submit').disabled = true;
+
+          if (document.querySelector('#task').value == '') return false;
+
+          const li = document.createElement('li');
+          li.innerHTML = document.querySelector('#task').value;
+
+          document.querySelector('#tasks').append(li);
+
+          document.querySelector('#task').value = '';
+
+          return false;
+        }
+      })
+
+    </script>
+
+  </head>
+
+<body>
+        <h1>Tasks</h1>
+        <ul id="tasks">
+        </ul>
+        <form id="new-task" target="_BLANK">
+            <input id="task" autocomplete="off" type="text">
+            <input id="b_submit" type="submit">
+        </form>
+
+</body>
+
+</html>
+
+---------------------->>>
+---------------------->>>
+---------------------->>>
+---------------------->>>
+---------------------->>>
+---------------------->>>
+---------------------->>>
+---------------------->>>
+---------------------->>>
+---------------------->>>
+---------------------->>>
